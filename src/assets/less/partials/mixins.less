@@ -1,0 +1,7 @@
+// calculates REMs from PX for
+.font-size-rem(@font-size: @baseFontSize) {
+     // divide by base size, round to 3 decimal places and covert to rem units
+    @rem-size: unit(round(@font-size / @baseFontSize, 3), rem);
+    font-size: ~"@{font-size}"; // fallback with px size
+    font-size: ~"@{rem-size}"; // return new font-size in rem
+}

@@ -1,0 +1,64 @@
+body {
+  font-family: @main-font;
+  font-weight: @main-font-weight;
+  margin: 0;
+
+  h1 {
+    .font-size-rem(36px);
+  }
+  
+  a {
+    color: @white !important;
+    &:hover {
+      color: @black !important;
+    }
+  }
+
+  .packages { 
+    margin: 50px 0;
+    .col-sm-4,
+    .col-sm-3 {
+      padding-left: 0;
+      padding-right: 50px;
+    }
+    .package {
+      padding: 0;
+
+      &.package--orange-border {
+          border: 1px solid @orange;
+          padding: 20px;
+      }
+
+      &.package--hover-background {
+        cursor: pointer;
+        &:hover {
+          background-color: @light;
+        }
+      }
+
+    }
+  }
+
+  
+  .btn--orange {
+    background-color: @orange !important;
+    color: @white;
+    border-radius: 0px;
+    font-weight: bold;
+  }
+
+  .heading {
+    &.heading--large {
+      font-size:40px;
+    }
+  }
+
+  .form-wrapper {
+    margin: 30px 0;
+    label {
+      font-weight: 300;
+    }
+  }
+}
+
+

@@ -1,0 +1,63 @@
+
+/* Override default navbar styles */
+.navbar-default {
+    background-color: @blue;
+    margin-bottom: 0px;
+    border: 0px;
+    border-radius: 0px;
+    
+    .nav__menu-item {
+        padding-left: 5px !important;
+        padding-right: 5px !important;
+        font-size: 13px;
+
+        &.nav__menu-item--inline {
+            display: inline-block !important;    
+        }
+    }
+
+    .nav__pipe-divider {
+        display: inline-block;
+        color: @white;
+    }
+
+    /* Remove pipe dividers on mobile menu */
+    @media (max-width: 1023px) {
+        .nav__pipe-divider {
+            display: none;
+        }
+    }
+}    
+/* Override .active style in navbar */
+.active {
+    font-weight: bold;
+    &>a {
+        background-color: @blue !important;
+    }
+}
+
+/* Override bootstrap carousel styles */
+.carousel {
+
+    .item--full-width {
+        width: 100%;
+    }
+
+    /* Override for bootstrap default indicators */
+    .carousel-indicators {
+
+        .--custom-indicator {
+            background: url(../images/indicator.svg) no-repeat !important;
+            width:30px !important;
+            height:3px !important;
+            cursor: pointer !important;
+            text-align:center !important;
+            border:none !important;
+            opacity: 0.5;
+            &.active {
+                opacity: 1;
+                margin: 1px;
+            }
+        }
+    } 
+ }
