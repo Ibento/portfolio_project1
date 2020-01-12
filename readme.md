@@ -1,9 +1,11 @@
 # css-frameworks-ca 
 
+> CSS Frameworks Course Assignment - Øyvind Dahl
+
 ## Clone GitHub repository
 ```
-git clone https://github.com/Ibento/noroff-reactapp
-cd noroff-reactapp
+git clone https://github.com/Ibento/portfolio_project1
+cd portfolio_project1
 ```
 ## Project setup
 ```
